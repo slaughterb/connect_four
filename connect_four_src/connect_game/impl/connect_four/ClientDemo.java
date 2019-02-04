@@ -1,4 +1,3 @@
-package connect_game.impl.connect_four;
 /* 
  * Description: This class provides for the client implementation of
  * the Connect Four game. Within the main method a GUI frame containing 
