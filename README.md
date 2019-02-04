@@ -7,3 +7,5 @@ Launching the server causes it to listen on a specified port number and wait for
 
 ![alt tag](https://github.com/slaughterb/connect_four/blob/master/usage.png)
 
+![alt tag](https://github.com/slaughterb/connect_four/blob/master/usageYellow.png)
+
