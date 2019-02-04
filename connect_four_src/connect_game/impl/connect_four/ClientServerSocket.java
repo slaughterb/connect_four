@@ -1,4 +1,3 @@
-package connect_game.impl.connect_four
 import java.net.Socket;
 import java.net.ServerSocket; 
 import java.io.DataOutputStream; 
