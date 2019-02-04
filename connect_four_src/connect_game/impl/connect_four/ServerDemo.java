@@ -1,5 +1,3 @@
-package connect_game.impl.connect_four;
-
 /*
  * Description: This class provides the server implementation for
  * the game. The server's game frame implementation requires a port
