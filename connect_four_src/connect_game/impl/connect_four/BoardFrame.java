@@ -1,4 +1,3 @@
-package connect_game.impl.connect_four;
 /*
  * Description: This class creates the visual environment for the
  * connect four board and the functionality that allows the board to
