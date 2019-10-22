@@ -72,11 +72,12 @@ public class ClientServerSocket {
         byteVector.add(recByte);
         recByte = inputData.readByte();
       }
-      byteAry = new byte[byteVector.size()];
+      int len = byteVector.size();
+      byteAry = new byte[len];
       
       // byteAry values are matched with the bytevector's
       // which contain recBytes (received bytes)
-      for (int i = 0; i < byteVector.size(); i++) {
+      for (int i = 0; i < len; i++) {
         byteAry[i] = byteVector.elementAt(i).byteValue();
       }
       recvString = new String(byteAry);
