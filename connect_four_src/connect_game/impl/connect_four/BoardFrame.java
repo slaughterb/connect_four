@@ -372,9 +372,8 @@ public class BoardFrame extends JFrame {
   }
   
   // method intends to check that there are no negative diagonal
-  // wins. It does so with a tri-nested loop, checking each 
-  // consecutive diagonal square within the valid bounds of the
-  // board. A for loop keeps track of a counter while the nested
+  // wins. It performs diagonalization checks for each grid square (r,c) 
+  // on the board. A for loop keeps track of a counter while the nested
   // r/c loops ensure that the function checks each row/col spot
   // The winning counter in the checking loop intends to make
   // the game potentially more expandable.
