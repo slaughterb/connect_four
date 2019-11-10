@@ -31,13 +31,7 @@ public class BoardFrame extends JFrame {
   // intends to create the GUI buttons for
   // game functionality (drapping in columns, resetting the grid,
   // and exchanging your turn position if desired).
-  private JButton dropCol0;
-  private JButton dropCol1;
-  private JButton dropCol2;
-  private JButton dropCol3;
-  private JButton dropCol4;
-  private JButton dropCol5;
-  private JButton dropCol6;
+  
   private JButton restartButton;
   private JButton swapTurn;
   
@@ -170,27 +164,18 @@ public class BoardFrame extends JFrame {
     // need to each be accessed individually 
     dropButtons = new ArrayList<JButton>();
     
-    // Establishes the text of the initialized buttons
-    dropCol0 = new JButton("Drop");
-    dropCol1 = new JButton("Drop");
-    dropCol2 = new JButton("Drop");
-    dropCol3 = new JButton("Drop");
-    dropCol4 = new JButton("Drop");
-    dropCol5 = new JButton("Drop");
-    dropCol6 = new JButton("Drop");
+    // Establishes the text of the initialized buttons.
+    // Intends to fill a list of drop-down buttons into a 
+    // collection so that operations can be done to each of
+    // the drop-down buttons without accessing each individually.
+    for (int c = 0; c < COLS; c++) {
+      dropButtons.add(new JButton("Drop"));
+    }
+
     restartButton = new JButton("RESTART GAME");
     swapTurn = new JButton("SWAP TURN");
       
-    // Intends to fill a list of drop-down buttons into a 
-    // collection so that operations can be done to each of
-    // the drop-down buttons without accessing each individually
-    dropButtons.add(dropCol0);
-    dropButtons.add(dropCol1);
-    dropButtons.add(dropCol2);
-    dropButtons.add(dropCol3);
-    dropButtons.add(dropCol4);
-    dropButtons.add(dropCol5);
-    dropButtons.add(dropCol6);
+   
  
     // adds the restartButton to a panel which goes into the
     // board layout
